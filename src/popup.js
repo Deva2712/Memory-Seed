@@ -3,12 +3,8 @@
  * Context Transfer for ChatGPT and Claude conversations
  * Uses OpenRouter API with Gemma 27B model for intelligent compression.
  * 
- * ⚠️ WARNING: API key is embedded for private use only!
- * DO NOT share this extension publicly!
+ * API key is loaded from config.js (not committed to GitHub)
  */
-
-// ⚠️ EMBEDDED API KEY - Keep this extension PRIVATE!
-const EMBEDDED_API_KEY = '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';
 
 document.addEventListener('DOMContentLoaded', () => {
   initializeChatTransfer();

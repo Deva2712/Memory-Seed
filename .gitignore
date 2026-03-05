@@ -1,44 +1,27 @@
-# Node modules
-node_modules/
-**/node_modules/
+# API Keys and Secrets
+src/config.js
 
-# Build outputs
-dist/
-build/
+# Extension builds
 *.zip
+MemorySeed-Extension*.zip
 
-# Environment files
-.env
-.env.local
-.env*.local
-
-# OS files
+# OS Files
 .DS_Store
-Thumbs.db
-
-# IDE files
-.vscode/
-.idea/
 *.swp
 *.swo
 
+# Node modules
+node_modules/
+dist/
+
+# IDE
+.vscode/
+.idea/
+
 # Logs
-logs/
 *.log
 npm-debug.log*
 
-# Dependencies
-package-lock.json
-pnpm-lock.yaml
-yarn.lock
-
-# Temporary files
-*.tmp
-*.temp
-
-# Old backup files
-*-old.*
-*-clean.*
-
-# Word documents
-*.docx
+# Environment
+.env
+.env.local
