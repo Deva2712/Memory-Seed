@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MemorySeed</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="logo-section">
+        <svg class="logo-icon" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M256 64C150 64 64 150 64 256C64 362 150 448 256 448C362 448 448 362 448 256C448 150 362 64 256 64Z" stroke="currentColor" stroke-width="24" fill="none"/>
+          <circle cx="192" cy="256" r="20" fill="currentColor"/>
+          <circle cx="320" cy="256" r="20" fill="currentColor"/>
+          <circle cx="256" cy="160" r="20" fill="currentColor"/>
+          <path d="M256 160 L256 256 L320 256" stroke="currentColor" stroke-width="16" fill="none"/>
+          <path d="M256 320 L256 380 M240 360 L272 360" stroke="currentColor" stroke-width="16"/>
+          <path d="M220 120 L240 140 M292 120 L272 140" stroke="currentColor" stroke-width="12"/>
+        </svg>
+        <h1>MemorySeed <span class="version">v2.0</span></h1>
+      </div>
+      <div class="status-badge" id="connectionStatus">
+        <span class="status-dot"></span>
+        <span>Ready</span>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <div class="card">
+        <div class="card-header">
+          <h2>Extract Chat Context</h2>
+          <p class="subtitle">Compress and transfer conversations between AI assistants</p>
+        </div>
+        
+        <div class="action-section">
+          <button id="extractBtn" class="btn btn-primary">
+            Extract & Compress
+          </button>
+        </div>
+        
+        <div class="info-box">
+          <strong>Note:</strong> If you see a communication error, refresh the ChatGPT/Claude page and try again.
+        </div>
+        
+        <div id="status" class="status-message"></div>
+        
+        <div id="outputContainer" class="output-container hidden">
+          <div class="output-header">
+            <h3>Transfer Prompt</h3>
+            <span class="token-count" id="tokenCount">0 tokens</span>
+          </div>
+          <textarea id="output" readonly></textarea>
+          <button id="copyBtn" class="btn btn-secondary">
+            Copy to Clipboard
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <span>MemorySeed</span>
+      <span class="separator">•</span>
+      <span>v2.0</span>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

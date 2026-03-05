@@ -1,0 +1,44 @@
+# Node modules
+node_modules/
+**/node_modules/
+
+# Build outputs
+dist/
+build/
+*.zip
+
+# Environment files
+.env
+.env.local
+.env*.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Dependencies
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Temporary files
+*.tmp
+*.temp
+
+# Old backup files
+*-old.*
+*-clean.*
+
+# Word documents
+*.docx

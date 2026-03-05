@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "MemorySeed",
+  "version": "2.0.0",
+  "description": "Intelligent context transfer for ChatGPT and Claude conversations. Compress and migrate chat history seamlessly.",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": [
+    "https://chatgpt.com/*", 
+    "https://claude.ai/*",
+    "http://localhost:*/*",
+    "https://*.render.com/*",
+    "https://*.railway.app/*",
+    "https://*.vercel.app/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://chatgpt.com/*", "https://claude.ai/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
