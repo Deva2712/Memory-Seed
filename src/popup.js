@@ -8,7 +8,7 @@
  */
 
 // ⚠️ EMBEDDED API KEY - Keep this extension PRIVATE!
-const EMBEDDED_API_KEY = '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';
+const EMBEDDED_API_KEY = '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';
 
 document.addEventListener('DOMContentLoaded', () => {
   initializeChatTransfer();
